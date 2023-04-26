@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+nav {
+    padding: 0 50px;
+    width: 100%;
+}
+
+.vr {
+    border-left: 6px solid green;
+    height: 30px;
+    position: absolute;
+    left: 50%;
+    bottom: 5%;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav1 {
+    background-color: green;
+    color: white;
+    height: 40px;
+    cursor: pointer;
+}
+
+.left>div+div {
+    margin-left: 40px;
+}
+
+.right>div {
+    margin-left: 40px;
+}
+
+.left>div:hover,
+.right>div:hover {
+    color: blue;
+    transition: all 0.5s;
+}
+
+span {
+    margin-left: 5px;
+}
+
+.nav2 {
+    background-color: white;
+    height: 55px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    -moz-box-shadow: 0 0 3px #ccc;
+    -webkit-box-shadow: 0 0 3px #ccc;
+    box-shadow: 0 0 10px #ccc;
+}
+
+.logo {
+    border-radius: 50%;
+    height: 50px;
+    padding: 5px;
+    margin-right: 20px;
+}
+
+.name {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.part1 {
+    font-weight: bold;
+    font-style: normal;
+}
+
+.motto {
+    font-style: italic;
+    font-size: smaller;
+    font-weight: 500;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 16px;
+    margin-left: 30px;
+    color: black;
+    font-weight: 600;
+}
+
+.brand{
+    margin-right: auto !important;
+}
+
+@media only screen and (min-width:1050px) {
+    .web{
+        visibility: visible;
+    }
+    .mobile{
+        visibility: hidden;
+    }
+}
+
+@media only screen and (max-width:1050px) {
+    .web {
+        display: none;
+    }
+
+    .mobile {
+        position: top;
+        top: 0px;
+        display: contents;
+    }
+}
