@@ -185,7 +185,7 @@ a {
 
 #banner {
     border: 1px solid red;
-    margin-right:0px ;
+    margin-right: 0px;
     margin-top: 20px;
     margin-left: 40px;
 
@@ -199,12 +199,12 @@ a {
 
 }
 
-.text-banner{
+.text-banner {
     position: relative;
-   
+
 }
 
-.titles{
+.titles {
     color: green;
     font-size: 16px;
     font-weight: 500;
@@ -225,7 +225,7 @@ a {
     font-size: 24px !important;
 }
 
-.card{
+.card {
     background-color: beige !important;
     border: none;
     -moz-box-shadow: 1px 2px 3px rgba(0, 0, 0, .5);
@@ -233,7 +233,7 @@ a {
     box-shadow: 1px 2px 3px rgba(0, 0, 0, .5);
 }
 
-.card-img-top{
+.card-img-top {
     border-radius: 60%;
     height: 180px;
     width: 70%;
@@ -241,25 +241,119 @@ a {
     margin-bottom: 0px !important;
 }
 
-.card-title{
+.card-title {
     font-weight: 1000;
     font-size: 20px;
 
 }
 
-.post{
+.post {
     font-weight: 400;
     font-size: 16px;
     font-weight: 500;
 }
 
-.degree{
+.degree {
     font-size: 16px;
     font-style: italic;
     letter-spacing: 1;
 }
 
 /**our staff ends */
+
+/**admission starts */
+
+.admission {
+    background-color: beige;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.status-2 {
+    display: none;
+}
+
+.content {
+    margin-right: 3rem;
+    padding-right: 3rem;
+    text-align: justify;
+}
+
+/**admission ends */
+
+/**animation starts */
+.flex-col {
+    
+    justify-content: center;
+    width: calc(100% / 2);
+    height: 100%;
+}
+
+.black {
+    color: #eee;
+    background: #111111;
+    width: 100%;
+    height: calc(100% / 3);
+}
+
+.growup {
+    animation: growup 1s infinite alternate;
+}
+
+.scaleme {
+    animation: scaleme 1s infinite alternate;
+}
+
+@keyframes growup {
+    from {
+        height: calc(100% / 3);
+    }
+
+    to {
+        height: calc(100% / 1.5);
+    }
+}
+
+@keyframes scaleme {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(2);
+        text-shadow: 0px 4px 4px hsl(0 0% 0%/0.5);
+    }
+}
+
+.centerize {
+    text-align: center;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+.green {
+    color: green;
+}
+
+.red {
+    color: red;
+}
+
+.blue {
+    color: blue;
+}
+
+.delay-1 {
+    animation-delay: 0.1s;
+}
+
+.delay-2 {
+    animation-delay: 0.2s;
+}
+
+
+/**animation ends */
 
 /*media queries and reesponsiveness starts*/
 
@@ -288,9 +382,26 @@ a {
 
     #banner {
         border: 1px solid red;
-        margin-right:10px ;
+        margin-right: 10px;
         margin-top: 20px;
-    margin-left: 0px;
+        margin-left: 0px;
+    }
+
+}
+
+@media screen and (max-width:800px) {
+    .status {
+        display: none;
+    }
+
+    .status-2 {
+        display: block;
+    }
+
+    .content {
+        margin-right: 0px;
+        padding-right: 0px;
+        text-align: justify;
     }
 
 }
@@ -340,10 +451,10 @@ a {
 
     #banner {
         border: 1px solid red;
-        margin-right:10px ;
+        margin-right: 10px;
         margin-top: 20px;
         margin-left: 0px;
-    
+
     }
 
 }
