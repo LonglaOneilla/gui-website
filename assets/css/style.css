@@ -56,7 +56,7 @@ span {
 
 .nav2 {
     background-color: beige !important;
-    height: 65px;
+   
     position: -webkit-sticky;
     position: sticky;
     top: 0;
